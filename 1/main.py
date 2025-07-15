@@ -1,5 +1,4 @@
 # Линейный поиск и сложности алгоритмов
-
 '''
 Временная сложность -  O(n):
 n - количество элементов в списке
@@ -15,7 +14,6 @@ import time
 import random
 
 list_time=[]
-
 
 def benchmark(func):
     def wrapper(*args, **kwargs):
@@ -44,4 +42,3 @@ line_search(10, list_numbers_100)
 line_search(10, list_numbers_1000)
 
 print(list_time)
-
