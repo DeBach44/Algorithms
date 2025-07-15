@@ -1,4 +1,5 @@
 # Линейный поиск и сложности алгоритмов
+
 '''
 Временная сложность -  O(n):
 n - количество элементов в списке
@@ -13,10 +14,8 @@ n - количество элементов в списке
 import time
 import random
 
-<<<<<<< HEAD
-=======
 list_time=[]
->>>>>>> 8b8d89f (Добавлен файл main.py)
+
 
 def benchmark(func):
     def wrapper(*args, **kwargs):
@@ -24,10 +23,7 @@ def benchmark(func):
         time.sleep(1)#Функция выполняется быстрее 1сек
         return_value = func(*args, **kwargs)
         end = time.time()-1
-<<<<<<< HEAD
-=======
         list_time.append(round(end - start, 4))
->>>>>>> 8b8d89f (Добавлен файл main.py)
         print('Время выполнения: {:.4f} секунд.'.format(end - start))
         return return_value
     return wrapper
@@ -46,7 +42,6 @@ list_numbers_1000 = [random.randint(1,100) for _ in range(1000)]
 line_search(10, list_numbers_10)
 line_search(10, list_numbers_100)
 line_search(10, list_numbers_1000)
-<<<<<<< HEAD
-=======
+
 print(list_time)
->>>>>>> 8b8d89f (Добавлен файл main.py)
+
